@@ -78,6 +78,11 @@
     overflow: hidden;
 }
 
+.card-img-top{
+	border-radius: 10px;
+	padding-top: 20px;
+}
+
 /* BUTTONS ON CARDS (HOME) */
 
 .card.col-md-4.col-xl-12 .card-body .btn.btn-primary {
@@ -733,4 +738,5 @@ fieldset {
     color: #613719;
     margin-top: 10px;
     font-weight: 800;
+
 }
