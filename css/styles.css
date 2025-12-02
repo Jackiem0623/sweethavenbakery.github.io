@@ -1,0 +1,736 @@
+@charset "utf-8";
+.container-fluid {
+    background-image: url("../images/background.png");
+    background-position: center center;
+    background-size: cover;
+}
+.container-fluid .container .navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-image: -webkit-linear-gradient(270deg,rgba(248,226,190,1.00) 0%,rgba(72,44,18,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(248,226,190,1.00) 0%,rgba(72,44,18,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(248,226,190,1.00) 0%,rgba(72,44,18,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(248,226,190,1.00) 0%,rgba(72,44,18,1.00) 100%);
+}
+
+.navbar-nav .nav-link {
+    color: #38251B;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: x-large;
+    font-weight: 800;
+    margin-right: 33px;
+    padding-right: 0px;
+}
+.container .navbar.navbar-expand-lg.navbar-light.bg-light .navbar-toggler {
+    background-color: #BAA281; /* Color of Hamburger icon when shrunk*/
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+
+/* CENTER TEXT ON ALL PAGES  */
+
+.container-fluid .container .text-center {
+    color: #FFADAE; /* very light pink, Title Sweet Haven Bakery*/
+    margin-top: 8px;
+	font-size: 36px;
+	font-weight: 800;
+	
+}
+
+
+/* CAROUSEL SECTION ON HOME */
+.carousel-item img {
+    width: 100%;
+    height: 500px;          
+    object-fit: cover;  
+    object-position: center;
+}
+
+.carousel-caption h5 {
+    font-size: 32px;     /* increase size */
+    font-weight: 800;    /* make bold */
+	color: #fff;
+}
+
+/* CARD SECTION ON HOME */
+
+.home-content-box {
+    background-color: rgba(255, 255, 255, 0.75); /* transparent white */
+    border-radius: 10px; /* rounded corners */
+    padding: 30px;       /* space inside the box */
+    margin-top: 15px;    /* spacing above */
+    margin-bottom: 40px; /* spacing below */
+}
+
+.row .col-xl-4 .card.col-md-4.col-xl-12 {
+    background-color: #FFADAE; /* very light pink, Card Color*/
+}
+.card.col-md-4.col-xl-12 .card-body .card-title {
+    color: #613719;
+    font-weight: bold;
+    font-size: 24px;
+}
+.card.col-md-4.col-xl-12 .card-body .card-text {
+    color: #613719;
+    font-weight: 800;
+    font-size: large;
+}
+
+.card {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+/* BUTTONS ON CARDS (HOME) */
+
+.card.col-md-4.col-xl-12 .card-body .btn.btn-primary {
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #613719; /* Button text color */
+    background-color: #C79364; /* For browsers that do not support gradients */
+    border: none;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+    box-shadow: 0 5px #545353;
+    font-weight: 800;
+}
+
+
+.card.col-md-4.col-xl-12 .card-body .btn.btn-primary:hover {
+	background-color: #C79364; /* For browsers that do not support gradients */
+	background-image: linear-gradient(90deg,rgba(248, 153, 125, 1) 20%, rgba(173, 51, 109, 1) 100%);
+	color:#fff;
+	text-shadow: 1px 1px 2px black;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+
+.card.col-md-4.col-xl-12 .card-body .btn.btn-primary:active {
+	transform: translateY(4px);
+}
+
+
+/* ACCORDION SECTION ON HOME */
+
+#accordion1 .card-header,
+#accordion1 .card-body {
+    background-color: #ffadae;
+    color: #613719; /* dark brown text*/
+    font-weight: 800;
+    border: 1px solid #e7a8b8;
+}
+#accordion1 .card-header a:hover {
+    color: #8b4f57;
+}
+#headingOne1 .mb-0 a {
+    color: #613719;
+    font-weight: bold;
+    font-size: x-large;
+}
+#headingTwo1 .mb-0 .collapsed {
+    color: #613719;
+    font-weight: bold;
+    font-size: x-large;
+}
+#headingThree1 .mb-0 .collapsed {
+    color: #613719;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*  ABOUT US SECTION */
+
+.p-about {
+    font-weight: 800;
+    font-size: 24px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    color: #613719;
+    margin: 0 0 15px 0; /* optional spacing between paragraphs */
+    text-indent: 2em;
+}
+
+.about-box {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px 25px;
+    border-radius: 10px;
+	margin: 20px 0 40px 0;
+}
+
+
+/*  CATERING HERO */
+
+.catering-hero {
+  position: relative;
+  width: 100%;
+  min-height: 380px;                 /* adjust to taste (height of brown band) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/catering page/cateringbanner.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 -60px 60px rgba(0,0,0,0.25); /* subtle darkening near bottom */
+}
+
+.catering-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.20); /* adjust darkness */
+  pointer-events: none;
+}
+
+/* keep the hero text aligned with page by using an inner .container */
+.hero-content {
+  position: relative; /* above overlay */
+  z-index: 2;
+  width: 100%;
+  max-width: 1140px; /* matches your .container width (Bootstrap) */
+  padding: 0 15px;
+  color: #fff; /* default for subtitle; individual rules below override */
+  text-align: center;
+}
+
+/* title look */
+.hero-title {
+  display: inline-block;
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffadae;            /* lighten or change to #613719 if you want dark text on a lighter banner */
+  margin: 0 0 10px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+}
+
+/* subtitle */
+.hero-sub {
+  color: #fff;
+  margin: 8px 0 18px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* CTA button style (overrides bootrap .btn if needed) */
+.hero-cta {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  background: #c79364;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .catering-hero { min-height: 300px; }
+  .hero-title { font-size: 32px; }
+  .hero-sub { font-size: 15px; }
+  .hero-cta { padding: 8px 18px; font-size: 15px; }
+}
+
+/* OFFER CARDS */
+
+.white-box {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+/* Make each column stretch full height */
+.white-box .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Force all cards to equal height */
+.offer-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Ensure the paragraph stays at the bottom if needed */
+.offer-card p {
+    margin-top: auto;
+}
+
+.offer-card {
+  background: #ffadae;
+  border-radius: 12px;
+  box-shadow: 0 4 10px rgba(97,55,25,0.2);
+  color: #613719 !important;        /* FIX: brown text to match theme */
+  font-size: 24px !important;       /* FIX: normal text size */
+}
+
+.offer-card h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #613719;                   /* Title color */
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.offer-card p {
+  margin: 0;
+  font-weight: 800;
+  font-size: large;
+  text-align: left;
+}
+
+
+/* PACKAGE CARDS */
+
+.package-box {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 0px;
+}
+.package-title-band {
+    background: #ffadae;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+}
+
+.package-title-band h4 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #613719;
+}
+
+.package-content {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 0 0 12px 12px;
+    color: #613719;
+}
+
+.package-card {
+    border-radius: 12px;
+    overflow: hidden; /* Ensures band + content align perfectly */
+    border: 1px solid #ead7c8;
+}
+
+.packages-section {
+  padding: 20px 25px;
+  margin: 0 0 40px 0;
+}
+
+.package-card ul li {
+  margin: 6px 0;
+  color: #613719;
+  font-size: large;
+  font-weight: 800;
+	
+}
+
+.package-card .price {
+  	display: inline-block;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: #613719;
+    background-color: #C79364;
+    border: none;
+    border-radius: 10px;
+    margin: 2px auto 0;
+}
+
+
+/* EVENTS */
+
+.event-types-box {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto; 
+}
+
+/* Spacing BETWEEN each event */
+.event-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; 
+}
+
+/* Each icon+text item */
+.event-icons div {
+    display: flex;
+    align-items: center;  /* keeps icon + text aligned */
+    gap: 10px;            /* space between icon + text */
+    font-size: 24px;
+    font-weight: 800;
+    color: #613719;
+}
+
+
+/* DESSERT GALLERY */
+
+/* White transparent box for dessert section */
+.dessert-box {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+/* Dessert cards */
+.dessert-card img {
+  border-radius: 12px;
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dessert-card .dessert-title {
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #613719;
+    margin-top: 10px;
+}
+
+.dessert-title.text-center {
+  color: #613719 !important;
+}
+
+
+/* CTA SECTION */
+
+.cta-section {
+  padding-top: 20px !important;            
+}
+
+/* Transparent white rounded box */
+.cta-box {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+/* CTA heading & text */
+.cta-box h3 {
+  color: #613719;
+  font-weight: 800;
+}
+
+.cta-box p {
+  color: #613719;
+  font-weight: 800;
+  font-size: large;
+}
+
+/* Request Quote Button */
+.cta-btn {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  color: #613719 !important;
+  background-color: #C79364;
+  border: none;
+  border-radius: 10px;
+  margin: 2px auto 0;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Hover effect  */
+.cta-btn:hover {
+  opacity: 0.85;
+}
+
+
+/* CONTACT US PARAGRAPHS SECTION */
+
+.contact-info-box {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  padding: 25px 30px;
+  max-width: 900px;
+  margin: 15px auto; /* reduced from 30px → moves box closer to text */
+  color: #613719;
+}
+
+/* WEDDING? HEADER */
+.contact-info-box h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #613719;
+  margin-bottom: 15px;
+}
+
+/* PARAGRAPHS INSIDE BOX  */
+.contact-info-box p {
+  font-size: large;      /* “large” */
+  font-weight: 800;
+  color: #613719;
+  margin: 8px 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.contact-info-box .p-text-center {
+  color: #c79364 !important;
+  font-weight: 800;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 20px; 
+}
+
+
+/* CONTACT US FORM */
+
+.container {
+  width:100%;
+  margin:0 auto;
+  position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+  background:#F9F9F9;
+  padding:25px;
+  margin:20px 0;
+}
+
+#contact h3 {
+  color: #F96;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#contact h4 {
+  margin:5px 0 15px;
+  display:block;
+  font-size:13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+  width:100%;
+  border:1px solid #CCC;
+  background:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+  -webkit-transition:border-color 0.3s ease-in-out;
+  -moz-transition:border-color 0.3s ease-in-out;
+  transition:border-color 0.3s ease-in-out;
+  border:1px solid #AAA;
+}
+
+#contact textarea {
+  height:100px;
+  max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+  cursor:pointer;
+  width:20%;
+  border:none;
+  border-radius: 10px;
+  background-color:#C79364; /* For browsers that do not support gradients */;
+  color:#FFF;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 15px 32px;
+  box-shadow: 0 9px #545353;
+  font-weight: bolder;
+  font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #C79364; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg,rgba(248, 153, 125, 1) 20%, rgba(173, 51, 109, 1) 100%);
+  color:#fff;
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+    margin-bottom: 0px;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+/* CAKE PRICING ON CONTACT US  */
+
+.cake-table-title {
+    text-align: Center;
+    font-size: 36px;
+    color: #FFADAE;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.cake-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Constantia, Georgia, serif;
+}
+
+.cake-table th {
+    background-color: #632F1F;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cake-table td {
+    padding: 12px;
+    font-size: 16px;
+    color: #4a3a2e;
+    border-bottom: 1px solid #e6e6e6;
+	text-align: center;
+}
+
+.cake-table td:first-child {
+    background-color: #632F1F;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cake-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.cake-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+/* FOOTER SECTION */
+
+.container-fluid .container footer {
+    background-image: -webkit-linear-gradient(270deg,rgba(242,219,184,1.00) 0%,rgba(77,49,23,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(242,219,184,1.00) 0%,rgba(77,49,23,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(242,219,184,1.00) 0%,rgba(77,49,23,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(242,219,184,1.00) 0%,rgba(77,49,23,1.00) 100%);
+}
+
+/* Footer background + spacing */
+.site-footer {
+    background: #613719;
+    color: white;
+}
+
+/* Footer logo */
+.footer-logo {
+    max-width: 300px;
+}
+
+/* Social Icons */
+.social-icons img.icon-img {
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    transition: 0.3s ease;
+    filter: brightness(100%);
+}
+
+.social-icons img.icon-img:hover {
+    transform: scale(1.1);
+    filter: brightness(85%);
+}
+
+/* Hours table */
+.hours-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer-hours {
+    font-size: 24px;
+}
+
+.footer-hours td {
+    padding: 6px 12px;
+    color: white;
+}
+
+/* Back to Top Button */
+.to-top {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.to-top:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* Title styling */
+.footer-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+/* Copyright */
+.copyright {
+    font-size: 20px;
+    color: #613719;
+    margin-top: 10px;
+    font-weight: 800;
+}

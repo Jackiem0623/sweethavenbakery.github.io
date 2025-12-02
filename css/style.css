@@ -1,0 +1,213 @@
+@charset "utf-8";
+.container-fluid {
+    background-image: url("../images/pastrybg.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.container-fluid .container .navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-image: -webkit-linear-gradient(270deg,rgba(248,226,190,1.00) 0%,rgba(72,44,18,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(248,226,190,1.00) 0%,rgba(72,44,18,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(248,226,190,1.00) 0%,rgba(72,44,18,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(248,226,190,1.00) 0%,rgba(72,44,18,1.00) 100%);
+}
+
+.navbar-nav .nav-link {
+    color: #38251B;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: x-large;
+    font-weight: 400;
+    margin-right: 33px;
+    padding-right: 0px;
+}
+.container .navbar.navbar-expand-lg.navbar-light.bg-light .navbar-toggler {
+    background-color: #BAA281; /* Color of Hamburger icon when shrunk*/
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+
+.container-fluid .container .text-center {
+    color: #FFADAE; /* very light pink, Fresh Baked*/
+    margin-top: 8px;
+	font-size: 36px;
+	font-weight: 800;
+}
+
+
+/* MENU SECTION */
+
+.menu-wrapper {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.menu-heading {
+    text-align: center;
+    color: #613719;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px #ffadae;
+}
+
+.menu-card {
+    background: #ffadae;
+    border: 1px solid #e7a8b8;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(97, 55, 25, 0.2);
+}
+
+.menu-category {
+    color: #613719;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #c58a9c;
+    color: #613719;
+    font-size: 1.2rem;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: bold;
+    color: #87512A;
+}
+
+
+/* WEEKLY SPECIALS SECTION */
+
+.weekly-specials {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 35px;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(97, 55, 25, 0.2);
+}
+
+.specials-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #613719;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px #ffadae;
+}
+
+.special-card {
+    background: #ffadae;
+    border: 1px solid #e7a8b8;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(97, 55, 25, 0.15);
+    height: 100%;
+}
+
+.special-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #613719;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.special-text {
+    font-size: 1.1rem;
+    color: #87512A;
+    line-height: 1.5;
+}
+
+
+/* FOOTER SECTION */
+
+.container-fluid .container footer {
+    background-image: -webkit-linear-gradient(270deg,rgba(242,219,184,1.00) 0%,rgba(77,49,23,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(242,219,184,1.00) 0%,rgba(77,49,23,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(242,219,184,1.00) 0%,rgba(77,49,23,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(242,219,184,1.00) 0%,rgba(77,49,23,1.00) 100%);
+}
+.footer-logo {
+    max-width: 300px;
+}
+
+/* Social Icons */
+.social-icons img.icon-img {
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    transition: 0.3s ease;
+    filter: brightness(100%);
+}
+
+.social-icons img.icon-img:hover {
+    transform: scale(1.1);
+    filter: brightness(85%);
+}
+
+/* Hours table */
+.hours-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer-hours {
+    font-size: 24px;
+}
+
+.footer-hours td {
+    padding: 6px 12px;
+    color: white;
+}
+
+/* Back to Top Button */
+.to-top {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.to-top:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* Title styling */
+.footer-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+/* Copyright */
+.copyright {
+    font-size: 20px;
+    color: #613719;
+    margin-top: 10px;
+    font-weight: 800;
+}
