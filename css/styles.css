@@ -1,6 +1,6 @@
 @charset "utf-8";
 .container-fluid {
-    background-image: url("../images/background.png");
+    background-image: url("images/background.png");
     background-position: center center;
     background-size: cover;
 }
@@ -24,16 +24,13 @@
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 }
 
-/* CENTER TEXT ON ALL PAGES  */
-
-.container-fluid .container .text-center {
-    color: #FFADAE; /* very light pink, Title Sweet Haven Bakery*/
-    margin-top: 8px;
-	font-size: 36px;
-	font-weight: 800;
-	
+.main-title {
+    color: #FFADAE;
+    font-size: 36px;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px #9D25A1;
+    text-align: center;
 }
-
 
 /* CAROUSEL SECTION ON HOME */
 .carousel-item img {
@@ -68,7 +65,7 @@
     font-size: 24px;
 }
 .card.col-md-4.col-xl-12 .card-body .card-text {
-    color: #613719;
+    color: #87512A;
     font-weight: 800;
     font-size: large;
 }
@@ -76,11 +73,6 @@
 .card {
     border-radius: 12px !important;
     overflow: hidden;
-}
-
-.card-img-top{
-	border-radius: 10px;
-	padding-top: 20px;
 }
 
 /* BUTTONS ON CARDS (HOME) */
@@ -117,13 +109,18 @@
 	transform: translateY(4px);
 }
 
+.card-img-top{
+	border-radius: 10px;
+	padding-top: 20px;
+}
+
 
 /* ACCORDION SECTION ON HOME */
 
 #accordion1 .card-header,
 #accordion1 .card-body {
     background-color: #ffadae;
-    color: #613719; /* dark brown text*/
+    color: #87512A;
     font-weight: 800;
     border: 1px solid #e7a8b8;
 }
@@ -174,7 +171,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/catering page/cateringbanner.jpg");
+  background-image: url("images/catering page/cateringbanner.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,6 +239,31 @@ html {
   .hero-cta { padding: 8px 18px; font-size: 15px; }
 }
 
+@media (max-width: 768px) {
+
+  /* give spacing under every offer card column */
+  .white-box .row > div {
+    margin-bottom: 20px !important;
+  }
+
+  /* remove spacing under the *last* offer card column */
+  .white-box .row > div:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* add spacing between stacked package columns on mobile */
+  .packages-section .row > .col-md-4 {
+    margin-bottom: 20px !important;
+  }
+
+  /* remove margin on the very last column so there's no extra gap at the end */
+  .packages-section .row > .col-md-4:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
 /* OFFER CARDS */
 
 .white-box {
@@ -259,18 +281,10 @@ html {
 
 /* Force all cards to equal height */
 .offer-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-/* Ensure the paragraph stays at the bottom if needed */
-.offer-card p {
-    margin-top: auto;
-}
-
-.offer-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background: #ffadae;
   border-radius: 12px;
   box-shadow: 0 4 10px rgba(97,55,25,0.2);
@@ -291,6 +305,7 @@ html {
   font-weight: 800;
   font-size: large;
   text-align: left;
+  color: #87512A;
 }
 
 
@@ -335,7 +350,7 @@ html {
 
 .package-card ul li {
   margin: 6px 0;
-  color: #613719;
+  color: #87512A;
   font-size: large;
   font-weight: 800;
 	
@@ -434,7 +449,7 @@ html {
 }
 
 .cta-box p {
-  color: #613719;
+  color: #87512A;
   font-weight: 800;
   font-size: large;
 }
@@ -484,7 +499,7 @@ html {
 .contact-info-box p {
   font-size: large;      /* “large” */
   font-weight: 800;
-  color: #613719;
+  color: #87512A;
   margin: 8px 0;
   line-height: 1.6;
   text-align: left;
@@ -585,6 +600,14 @@ fieldset {
 
 #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
+@media (max-width: 768px) {
+  #contact button[type="submit"] {
+    width: 100% !important;   /* full width */
+    font-size: 18px;          /* easier to tap */
+    padding: 15px;            /* better spacing */
+  }
+}
+
 #contact input:focus, #contact textarea:focus {
     outline: 0;
     border: 1px solid #999;
@@ -655,6 +678,22 @@ fieldset {
     background-color: #ffffff;
 }
 
+@media (max-width: 768px) {
+
+  .cake-table {
+    font-size: 14px !important;
+    display: block;
+    overflow-x: auto;      /* allows horizontal scroll */
+    white-space: nowrap;   /* keeps columns readable */
+  }
+
+  .cake-table th,
+  .cake-table td {
+    padding: 8px !important;
+    font-size: 14px !important;
+  }
+}
+
 
 /* FOOTER SECTION */
 
@@ -667,7 +706,6 @@ fieldset {
 
 /* Footer background + spacing */
 .site-footer {
-    background: #613719;
     color: white;
 }
 
@@ -692,20 +730,18 @@ fieldset {
 
 /* Hours table */
 .hours-title {
-    font-size: 24px;
+    font-size: 24px; /* OPENING HOURS TITLE */
     font-weight: 800;
     color: #ffffff;
     text-align: center;
     padding-bottom: 10px;
 }
 
-.footer-hours {
-    font-size: 24px;
-}
-
 .footer-hours td {
     padding: 6px 12px;
     color: white;
+	font-size: 24px;
+	font-weight: 800;
 }
 
 /* Back to Top Button */
@@ -724,13 +760,6 @@ fieldset {
     background: rgba(255, 255, 255, 0.35);
 }
 
-/* Title styling */
-.footer-title {
-    font-size: 24px;
-    font-weight: 800;
-    margin-bottom: 12px;
-    color: #ffffff;
-}
 
 /* Copyright */
 .copyright {
@@ -738,5 +767,4 @@ fieldset {
     color: #613719;
     margin-top: 10px;
     font-weight: 800;
-
 }
