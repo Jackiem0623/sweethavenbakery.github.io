@@ -1,6 +1,6 @@
 @charset "utf-8";
 .container-fluid {
-    background-image: url("images/background.png");
+    background-image: url("../images/background.png");
     background-position: center center;
     background-size: cover;
 }
@@ -171,7 +171,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("images/catering page/cateringbanner.jpg");
+  background-image: url("../images/catering page/cateringbanner.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -768,6 +768,7 @@ fieldset {
     margin-top: 10px;
     font-weight: 800;
 }
+
 
 
 
