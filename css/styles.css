@@ -287,7 +287,7 @@ html {
   justify-content: flex-start;
   background: #ffadae;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(97,55,25,0.2);
+  box-shadow: 0 4 10px rgba(97, 55, 25, 0.2);
   color: #613719 !important;        /* FIX: brown text to match theme */
   font-size: 24px !important;       /* FIX: normal text size */
 }
@@ -768,6 +768,7 @@ fieldset {
     margin-top: 10px;
     font-weight: 800;
 }
+
 
 
 
