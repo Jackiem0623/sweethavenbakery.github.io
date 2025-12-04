@@ -11,5 +11,5 @@ if (isset($_POST['submit'])) {
 	$txt = "You have recieved an e-mail from ".$name.".\n\n".$message;
 	
 	mail($mailto, $subject, $txt, $headers);
-	header("Location: AFTER-SEND-PAGE?mailsend");
+	header("Location:https://jackiem0623.github.io/sweethavenbakery.github.io/index/index.html/?mailsend");
  }
