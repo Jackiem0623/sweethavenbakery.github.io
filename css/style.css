@@ -211,3 +211,39 @@
     margin-top: 10px;
     font-weight: 800;
 }
+
+
+/* ADDS SPACING BETWEEN MENU CARDS ON MOBILE */
+
+@media (max-width: 768px) {
+    .menu-card,
+    .special-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+  .menu-wrapper .row.mt-4 {
+    margin-top: 8px !important;
+  }
+}
+
+@media (max-width: 768px) {
+    .menu-list li {
+        gap: 8px; /* creates gap between words and prices on mobile */
+    }
+}
+
+
+/* ADDS SPACING BETWEEN SPECIALS CARDS ON MOBILE */
+@media (max-width: 768px) {
+  .weekly-specials .col-md-4 {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .weekly-specials .col-md-4:last-child {
+    margin-bottom: 0 !important;
+  }
+}
