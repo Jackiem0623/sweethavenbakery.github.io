@@ -29,6 +29,7 @@
     margin-top: 8px;
 	font-size: 36px;
 	font-weight: 800;
+	text-shadow: 1px 1px 3px #613719;
 }
 
 
@@ -80,6 +81,7 @@
     border-bottom: 1px dashed #c58a9c;
     color: #613719;
     font-size: 1.2rem;
+	font-weight: 600;
 }
 
 .menu-list li:last-child {
@@ -247,3 +249,4 @@
     margin-bottom: 0 !important;
   }
 }
+
